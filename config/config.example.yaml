@@ -1,0 +1,16 @@
+---
+- descriptor: "pip-services:logger:console:default:1.0"
+  level: "trace"
+
+- descriptor: "service-tags:persistence:file:default:1.0"
+  path: "./data/tags.json"
+
+- descriptor: "service-tags:controller:default:default:1.0"
+  options:
+    max_tag_count: 100
+
+- descriptor: "service-tags:service:http:default:1.0"
+  connection:
+    protocol: "http"
+    host: "0.0.0.0"
+    port: 8080

@@ -1,0 +1,1 @@
+export { TagsServiceFactory } from './TagsServiceFactory';
